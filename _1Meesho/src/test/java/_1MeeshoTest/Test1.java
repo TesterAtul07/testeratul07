@@ -93,6 +93,7 @@ import Pages.TrackPantsPage;
 	public void testTestment(ITestResult result) throws IOException
 	{
 
+		System.out.println("Done");
 		if(ITestResult.FAILURE == result.getStatus())
 		{
 		  Utilities.captureScreenshot(driver, "test-output//FailedTestScreenshot", TestID);
