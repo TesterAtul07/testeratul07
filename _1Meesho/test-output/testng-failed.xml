@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="extentReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Testt(failed)">
+    <classes>
+      <class name="_1MeeshoTest.Test2">
+        <methods>
+          <include name="selectTargetProduct"/>
+          <include name="clearingObject"/>
+          <include name="closeBrowser"/>
+          <include name="testTestment"/>
+          <include name="creatingPOMObject"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- _1MeeshoTest.Test2 -->
+      <class name="_1MeeshoTest.Test1">
+        <methods>
+          <include name="testTestment"/>
+          <include name="clearingObject"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="creatingPOMObject"/>
+          <include name="selectTargetProduct"/>
+        </methods>
+      </class> <!-- _1MeeshoTest.Test1 -->
+    </classes>
+  </test> <!-- Testt(failed) -->
+</suite> <!-- Failed suite [Suite] -->
